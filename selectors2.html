@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+    div:first-of-type{
+        height:1000px;
+    }
+
+    div#test:target{
+        animation: kf 500ms ease;
+    }
+
+    @keyframes kf{
+        0%{
+            background-color: transparent;
+        }
+        50%{
+            background-color: grey;
+        }
+        100%{
+            background-color: transparent;
+        }
+    }
+
+
+    </style>
+</head>
+<body>
+<a href="#test">Go to div</a>
+<div>
+
+</div>
+<div id="test">
+    This is div test
+</div>
+</body>
+</html>

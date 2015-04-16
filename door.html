@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        body{
+            perspective: 500px;
+            transform-style: preserve-3d; /*default value : flat*/
+        }
+
+        div.parent{
+            height:500px;
+            width:200px;
+            margin: 3em auto;
+            background-color: rgba(255,0,0,0.66);
+            border: 1px solid red;
+            transform-origin: 0% 0%;
+          /*  perspective: 500px;*/
+            transform-style: preserve-3d; /*default value : flat*/
+        }
+
+        div.parent:hover{
+            transform: rotateY(-45deg);
+            transition: transform 500ms ease;
+        }
+
+        div.parent:hover > div.child{
+
+            transform: rotateX(25deg);
+            transition: transform 200ms ease 500ms;
+        }
+
+        div.child {
+            margin: 0;
+            border: 1px solid red;
+            height: 200px;
+            transform-origin: 0% 0%;
+            background-color: rosybrown;
+        }
+
+        /*div.child:hover{
+            transform: rotateX(25deg);
+            transition: transform 200ms ease 500ms;
+        }
+*/
+    </style>
+</head>
+<body>
+<div class="parent"><div class="child"></div></div>
+
+</body>
+</html>

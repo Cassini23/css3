@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        li:nth-child(2){
+            background-color: red;
+        }
+
+        li:nth-child(2) ~ li{
+            background-color: green;
+        }
+
+        div.container p:nth-child(2){
+            background-color: orange;
+        }
+
+        div.container p:nth-of-type(4){
+            background-color: cadetblue;
+        }
+
+        p:empty{
+          background-color: brown;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>Science</li>
+    <li>Math</li>
+    <li>History</li>
+    <li>English</li>
+    <li>Fin</li>
+
+</ul>
+<div class="container">
+    <p>hi</p>
+    <p>hi</p>
+    <p>hi</p>
+    <div>goodbye</div>
+    <p>hi</p>
+    <p>hi</p>
+    <p></p>
+    <p></p>
+
+</div>
+</body>
+</html>

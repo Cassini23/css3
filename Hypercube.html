@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet"  href="hypercubes.css"/>
+    <title>Hypercubes</title>
+
+</head>
+<body>
+
+<div id="parent">
+<div id="top"></div>
+<div id="bottom"></div>
+<div id="left"></div>
+<div id="right"></div>
+<div id="front"></div>
+<div id="back"></div>
+
+    <div id="top-inner"></div>
+    <div id="bottom-inner"></div>
+    <div id="left-inner"></div>
+    <div id="right-inner"></div>
+    <div id="front-inner"></div>
+    <div id="back-inner"></div>
+</div>
+
+<!-- a cube within another in 3d space rotating about an axis, toggles to a circular
+moving pattern of individual faces of the two cubes-->
+</body>
+<script>
+    var div  = document.querySelector('#parent');
+    div.addEventListener('click',function(){
+        div.classList.toggle('animate');
+    });
+</script>
+</html>
